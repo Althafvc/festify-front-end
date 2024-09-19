@@ -49,14 +49,14 @@ const OTP = () => {
       try {
         const queryData = { otp, email,role };
         // Sending OTP and email to the server for verification
-        const response = await axiosInstance.post('student/otp', queryData);
+        const response = await axiosInstance.post('/otp', queryData);
         // Set success alert if verification is successful
         setAlert({ type: 'success', msg: response.data.msg });
 
 
         // navigating to the desired login page
-        if(role=='sdmin')  {
-          setTimeout(() => Navigate('/student/login'),1000);
+        if(role=='admin')  {
+          setTimeout(() => Navigate('/admin/login'),1000);
         }else {
           setTimeout(() => Navigate('/teacher/login'),1000);
         }

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Adminroutes from "./Router/Adminroutes";
+import CommonRoutes from "./Router/CommonRoutes";
 
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path='/*' element={<Adminroutes/>}/>
+      <Route path='/admin/*' element={<Adminroutes/>}/>
+      <Route path='/*' element={<CommonRoutes/>}/>
     </Routes>
     </BrowserRouter>
     </>

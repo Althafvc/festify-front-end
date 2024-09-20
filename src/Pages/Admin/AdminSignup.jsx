@@ -10,11 +10,6 @@ function AdminSignup() {
   // Using the useForm hook to handle form state and validation
   const { register, handleSubmit, getValues, formState: { errors } } = useForm();
 
-  // Initial state for admin input data
-  const initialAdminData = { institutionname: '', institutiontype: '', email: '', password: '', confirmpassword: '' };
-
-  // State to manage form input and alert messages
-  const [admininputData, setadmininputData] = useState(initialAdminData);
   const [alert, setAlert] = useState({visible:false, type:'', msg:''})
 
   // Hook for navigation (redirecting after signup)
@@ -23,7 +18,6 @@ function AdminSignup() {
   // Handle form submission
   async function onsubmit(data) {
     
-   
     
     // Destructure the email from the form data
     const email = data.email;
@@ -128,7 +122,6 @@ function AdminSignup() {
               <input 
                 type="password" 
                 name="password" 
-                value={'Althaf@20'}
                 placeholder="Password" 
                 className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none" 
                 {...register('password', {
@@ -148,7 +141,6 @@ function AdminSignup() {
               <input 
                 type="password" 
                 name="confirmpassword" 
-                value={'Althaf@20'}
                 placeholder="Confirm Password" 
                 className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none"
                 {...register('confirmpassword', {

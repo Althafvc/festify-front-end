@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../../Components/Admin/Navbar'
 
 function AdminHome() {
   return (
-    <div>AdminHome</div>
+   <>
+   <div className="wrapper w-[100vw] h-[100vh] bg-[#a5f5bd]"></div>
+   </>
   )
 }
 

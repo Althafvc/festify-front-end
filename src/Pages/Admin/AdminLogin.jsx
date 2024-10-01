@@ -60,7 +60,6 @@ function AdminLogin() {
                 type="email"
                 name="email"
                 placeholder="Email"
-                onChange={handleChange}  // Manually managing input value changes
                 className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none" 
                 {...register('email', {
                   required: 'This field is required',  // Validation rule: field is required
@@ -79,7 +78,6 @@ function AdminLogin() {
               <input 
                 type="password"
                 name="password"
-                onChange={handleChange}  // Manually managing input value changes
                 placeholder="Password"
                 className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none" 
                 {...register('password', {

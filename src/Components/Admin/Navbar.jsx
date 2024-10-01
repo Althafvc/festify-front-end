@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <>
 
-      <header className='flex shadow-md py-2 px-4 sm:px-10 bg-[#40936d] font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
+      <header className='flex shadow-md py-2 px-4 sm:px-10 bg-[#62d09efa] font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
         <div className='flex flex-wrap items-center justify-between gap-5 w-full'>
           <a href="javascript:void(0)"><img src={Navlogo} alt="logo" className='w-36 ' />
           </a>
@@ -70,11 +70,12 @@ function Navbar() {
             {!isMenuOpen ? <MenuIcon size={40} className='text-gray-700 ' /> : <CloseIcon size={40} className='text-black' />}
           </button>
 
-          <div className={isMenuOpen ? 'fixed z-10 top-[76px] left-0 right-0 h-screen bg-white ease-out duration-500' : 'fixed right-[-100%] ease-out duration-500'}>
+
+          <div className={isMenuOpen ? 'fixed z-10 top-[96px] left-0 right-0 h-[200px] bg-white ease-out duration-500' : 'fixed top-[-100%] ease-out duration-500 '}>
               <ul>
                 <li className='max-lg:border-b max-lg:py-3 px-3 text-black hover:text-cyan-400 text-[15px] block font-semibold'>Home</li>
                 <li className='max-lg:border-b max-lg:py-3 px-3 text-black hover:text-cyan-400 text-[15px] block font-semibold'>About</li>
-                <li className='text-black hover:text-cyan-400 text-[15px] block font-semibold max-lg:border-b max-lg:py-3 px-3' onClick={()=>Navigate('/student/teachers')}>Contact</li>
+                <li className='text-black hover:text-cyan-400 text-[15px] block font-semibold max-lg:border-b max-lg:py-3 px-3'>Contact</li>
               </ul>
           </div>
         </div>

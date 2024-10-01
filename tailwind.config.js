@@ -8,7 +8,9 @@ export default {
     extend: {
       fontFamily:{inter:['Inter'],
         abhaya:['Abhaya Libre'],
-        poppins:['Poppins']
+        poppins:['Poppins'],
+        aclonica:['Aclonica'],
+        inter:['Inter']
       },
 
       screens: {

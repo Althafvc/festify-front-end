@@ -3,6 +3,7 @@ import Defaultbutton from '../../Components/Shared/Defaultbutton'
 
 function Addcontroller() {
   return (
+    <>
     <div className="wrapper w-[100vw] h-auto bg-[#a5f5bd] xxs: flex xxs:flex-col pt-6 items-center gap-6 py-10">
 
         <div className="head-area ">
@@ -32,6 +33,7 @@ function Addcontroller() {
 
         </div>
       </div>
+      </>
   )
 }
 

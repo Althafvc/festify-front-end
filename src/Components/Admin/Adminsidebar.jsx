@@ -12,10 +12,10 @@ function Adminsidebar() {
         
         <li className='text-xl text-white font-semibold cursor-pointer hover:bg-[#338864] h-[40px] w-full flex justify-center items-center font-poppins' onClick={()=> navigate('/admin/home')}>Results live</li>
         <li className='text-xl text-white font-semibold cursor-pointer hover:bg-[#338864] h-[40px] w-full flex justify-center items-center font-poppins' onClick={()=> navigate('/admin/addprogram')}>Add festival</li>
-        <li className='text-xl text-white font-semibold cursor-pointer hover:bg-[#338864] h-[40px] w-full flex justify-center items-center font-poppins'>Add items</li>
+        <li className='text-xl text-white font-semibold cursor-pointer hover:bg-[#338864] h-[40px] w-full flex justify-center items-center font-poppins' onClick={()=> navigate('/admin/additem')}>Add items</li>
         <li className='text-xl text-white font-semibold cursor-pointer hover:bg-[#338864] h-[40px] w-full flex justify-center items-center font-poppins' onClick={()=> navigate('/admin/addcontroller')}>Add controller</li>
         <li className='text-xl text-white font-semibold cursor-pointer hover:bg-[#338864] h-[40px] w-full flex justify-center items-center font-poppins'>Add sections</li>
-        <li className='text-xl text-white font-semibold cursor-pointer hover:bg-[#338864] h-[40px] w-full flex justify-center items-center font-poppins'>Add groups</li>
+        <li className='text-xl text-white font-semibold cursor-pointer hover:bg-[#338864] h-[40px] w-full flex justify-center items-center font-poppins' onClick={()=> navigate('/admin/addgroup')}>Add groups</li>
        
       </ul>
       </div>

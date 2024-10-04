@@ -46,10 +46,10 @@ function AdminLogin() {
     <>
       {/* Wrapper for the entire login form */}
       <div className="wrapper w-[100vw] h-[100vh] bg-[#a5f6bd] flex flex-col justify-center items-center gap-2">
-        <div className="form-area w-auto h-auto bg-[#89deba] flex flex-col justify-center items-center rounded-2xl gap-10 px-6 pt-4 pb-10">
+        <div className="form-area w-auto h-auto bg-[#89deba] flex flex-col justify-center items-center rounded-2xl gap-10 px-6 sm:px-9 pt-4 md:pt-6 pb-10">
 
           {/* Form title */}
-          <h1 className='text-white text-4xl font-bold underline font-inter'>Login</h1>
+          <h1 className='text-white text-4xl font-bold underline font-inter lg:text-5xl 2xl:text-6xl'>Login</h1>
 
           {/* Admin login form */}
           <form onSubmit={handleSubmit(onsubmit)} className='w-full h-full flex flex-col justify-center items-center gap-6'>
@@ -60,7 +60,7 @@ function AdminLogin() {
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none" 
+                className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none lg:w-[300px] 2xl:h-[50px] 2xl:w-[360px] 2xl:text-xl" 
                 {...register('email', {
                   required: 'This field is required',  // Validation rule: field is required
                   pattern: {
@@ -79,7 +79,7 @@ function AdminLogin() {
                 type="password"
                 name="password"
                 placeholder="Password"
-                className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none" 
+                className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none lg:w-[300px] 2xl:h-[50px] 2xl:w-[360px] 2xl:text-xl" 
                 {...register('password', {
                   required: 'This field is required',  // Validation rule: field is required
                   pattern: {
@@ -90,22 +90,20 @@ function AdminLogin() {
               />
               {/* Show error message if password validation fails */}
               {errors.password && <span className='text-red-600'>{errors.password.message}</span>}
+              <p className='hover:underline text-[#208a62] font-semibold mt-3 lg:text-lg xl:text-xl 2xl:text-2xl 2xl:mt-5'>Forgot password</p>
+
             </div>
 
-            {/* Link for forgotten password */}
-            <div className="forgot-area text-left w-full">
-              <p className='hover:underline text-[#208a62] text-xl font-semibold'>Forgot password</p>
-            </div>
 
             {/* Submit button */}
-            <Defaultbutton value={'Submit'} classname={'bg-[#14ae86] text-white text-xl mr-5'} clicked={handleSubmit(onsubmit)} />
+            <Defaultbutton value={'Submit'} classname={'bg-[#14ae86] text-white text-xl lg:text-2xl mr-5 mt-3'} clicked={handleSubmit(onsubmit)} />
           </form>
         </div>
 
         {/* Link to sign up if user does not have an account */}
-        <p className='font-abhaya text-[#285c3d] text-xl'>
+        <p className='font-abhaya text-[#285c3d] text-xl lg:text-2xl lg:mt-2'>
           Do not have an account?
-          <a href="#" className='font-abhaya text-[#307291eb] hover:text-blue-500 hover:underline ml-2'>Signup</a>
+          <a href="/admin/signup" className='font-abhaya text-[#307291eb] hover:text-blue-500 hover:underline ml-2'>Signup</a>
         </p>
 
         {/* Display alert messages (either success or error) based on the login attempt */}

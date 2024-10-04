@@ -4,7 +4,8 @@ import Navbar from '../../Components/Admin/Navbar'
 function AdminHome() {
   return (
    <>
-   <div className="wrapper w-[100vw] h-[100vh] bg-[#a5f5bd] xxs: flex justify-center pt-12">
+   <div className="wrapper w-[100vw] h-[100vh] bg-[#a5f5bd] xxs:flex xxs:flex-col xxs:items-center  pt-12">
+
     <div className="slate w-[80%] h-[80%] bg-[#89deba] rounded-2xl xxs:flex xxs:flex-col xxs:gap-7 ">
       <div className="heading xxs:w-full xxs:h-[60px] xxs:flex xxs:justify-center xxs:items-center">
         <h1 className='font-aclonica text-[#06744C] xxs:text-xl '>PROGRAM NAME</h1>

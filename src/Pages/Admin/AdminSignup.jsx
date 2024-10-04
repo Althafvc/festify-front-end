@@ -52,13 +52,13 @@ function AdminSignup() {
     <>
       {/* Wrapper for the whole signup form */}
       <div className="wrapper w-[100vw] h-[100vh] bg-[#a5f6bd] flex flex-col justify-center items-center gap-2">
-        <div className="form-area w-auto h-auto bg-[#89deba] flex flex-col justify-center items-center rounded-2xl gap-10 px-6 pt-4 pb-10">
+        <div className="form-area w-auto h-auto bg-[#89deba] flex flex-col justify-center items-center rounded-2xl gap-10   px-6 xxs:pt-4 xs:pt-6 md:pt-8 md:px-10 xl:px-12 pb-10">
           
           {/* Signup form title */}
-          <h1 className='text-white text-4xl font-bold underline font-inter'>Signup</h1>
+          <h1 className='text-white text-4xl md:text-5xl font-bold underline font-inter'>Signup</h1>
           
           {/* Form to handle admin signup */}
-          <form className='w-full h-full flex flex-col justify-center items-center gap-6' onSubmit={handleSubmit(onsubmit)}>
+          <form className='w-full h-full flex flex-col justify-center items-center gap-6 2xl:gap-8 ' onSubmit={handleSubmit(onsubmit)}>
             
             {/* Institution Name input field */}
             <div className="inp-area flex flex-col">
@@ -66,7 +66,7 @@ function AdminSignup() {
                 type="text" 
                 name="institutionname" 
                 placeholder="Institution Name" 
-                className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none" 
+                className="w-[260px] rounded-md pl-3  2xl:pl-5 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none xl:w-[320px] 2xl:w-[360px] 2xl:h-[50px] 2xl:text-xl" 
                 {...register('institutionname', {
                   required: 'This field is required',
                   minLength: {
@@ -85,7 +85,7 @@ function AdminSignup() {
                 type="text" 
                 name="institutiontype" 
                 placeholder="Institution Type" 
-                className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none" 
+                className="w-[260px] rounded-md pl-3 2xl:pl-5 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none xl:w-[320px] 2xl:w-[360px] 2xl:h-[50px] 2xl:text-xl" 
                 {...register('institutiontype', {
                   required: 'This field is required',
                   minLength: {
@@ -104,7 +104,7 @@ function AdminSignup() {
                 type="email" 
                 name="email" 
                 placeholder="Email" 
-                className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none" 
+                className="w-[260px] rounded-md pl-3 2xl:pl-5 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none xl:w-[320px] 2xl:w-[360px] 2xl:h-[50px] 2xl:text-xl" 
                 {...register('email', {
                   required: 'This field is required',
                   pattern: {
@@ -123,7 +123,7 @@ function AdminSignup() {
                 type="password" 
                 name="password" 
                 placeholder="Password" 
-                className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none" 
+                className="w-[260px] rounded-md pl-3 2xl:pl-5 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none xl:w-[320px] 2xl:w-[360px] 2xl:h-[50px] 2xl:text-xl" 
                 {...register('password', {
                   required:'This field is required',
                   pattern: {
@@ -142,7 +142,7 @@ function AdminSignup() {
                 type="password" 
                 name="confirmpassword" 
                 placeholder="Confirm Password" 
-                className="w-[260px] rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none"
+                className="w-[260px] rounded-md pl-3 2xl:pl-5 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none xl:w-[320px] 2xl:w-[360px] 2xl:h-[50px] 2xl:text-xl"
                 {...register('confirmpassword', {
                   required: 'Please confirm your password',
                   validate: value => value === getValues('password') || 'Passwords do not match',
@@ -153,14 +153,14 @@ function AdminSignup() {
             </div>
             
             {/* Submit button for the form */}
-            <Defaultbutton value={'Submit'} classname={'bg-[#14ae86] text-white text-xl mr-5'} clicked={handleSubmit(onsubmit)}/>
+            <Defaultbutton value={'Submit'} classname={'bg-[#14ae86] text-white text-xl 2xl:text-2xl mr-5'} clicked={handleSubmit(onsubmit)}/>
           </form>
         </div>
         
         {/* Link to login if the user already has an account */}
-        <p className='font-abhaya text-[#285c3d] text-xl'>
+        <p className='font-abhaya text-[#285c3d] text-xl xl:text-2xl xl:mt-2'>
           Already have an account?
-          <a href="#" className='font-abhaya text-[#307291eb] hover:text-blue-500 hover:underline'>Login</a>
+          <a href="/admin/login" className='font-abhaya text-[#307291eb] hover:text-blue-500 hover:underline'>Login</a>
         </p>
 
         {/* Display the alert message based on form submission */}

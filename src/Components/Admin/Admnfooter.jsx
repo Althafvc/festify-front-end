@@ -10,10 +10,10 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 function Admnfooter() {
   return (
     <>
-     <div className='footer w-full h-auto bg-[#308b62] pb-5'>
+     <div className='footer  w-full h-auto bg-[#308b62] pb-5'>
        <div className='w-[90%] md:flex md:justify-around '>
        <div className="left h-auto flex flex-col items-center gap-5"> 
-            <div className="head-area mt-[70px]"><h1 className='font-parafont font-bold text-black w-full text-2xl'>Edumeet</h1></div>
+            <div className="head-area mt-[40px]"><h1 className='font-parafont font-bold text-black w-full text-2xl'>Edumeet</h1></div>
             <div className="icons-area flex gap-10">
                  <FacebookRoundedIcon className='text-white cursor-pointer'sx={{ width: 40, height: 40}}/>
                  <XIcon className='text-white cursor-pointer' sx={{ width: 40, height: 40 }}/>

@@ -39,7 +39,8 @@ function AdminHome() {
 
 
 
-            <div className="subsec font-bold font-aclonica xxs:w-full xxs:text-xs sm:text-sm xxs:ml-5 lg:text-base xxs:mb-5 2xl:text-xl">sub junior
+            <div className="subsec font-bold font-aclonica xxs:w-full xxs:text-xs sm:text-sm xxs:ml-5 lg:text-base
+             xxs:mb-5 2xl:text-xl">sub junior
 
               <table className='xxs:w-[90%] xxs:mt-'>
                 <tr>

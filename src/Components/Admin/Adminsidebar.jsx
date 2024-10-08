@@ -5,8 +5,7 @@ function Adminsidebar() {
   const navigate = useNavigate()
   return (
     <>
-    <div className="wrapper xxs:hidden md:block w-[300px] h-[100vh] flex justify-center items-center bg-[#4da87e]">
-
+    <div className="wrapper xxs:hidden md:block w-[300px] h-screen border-4 border-red-800   flex justify-center items-center bg-[#4da87e]">
       <div className="items  flex flex-col justify-center items-center h-full w-full">
       <ul className='flex flex-col gap-8 h-full w-full items-center mt-10'>
         
@@ -18,6 +17,7 @@ function Adminsidebar() {
        
       </ul>
       </div>
+      
     </div>
     </>
   )

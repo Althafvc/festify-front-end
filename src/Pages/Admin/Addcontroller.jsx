@@ -4,9 +4,9 @@ import Defaultbutton from '../../Components/Shared/Defaultbutton'
 function Addcontroller() {
   return (
     <>
-    <div className="wrapper w-[100vw] h-auto bg-[#a5f5bd] xxs: flex xxs:flex-col pt-6 items-center gap-6 py-10">
+    <div className="">
 
-        <div className="head-area ">
+        <div className="head-area">
           <h1 className='font-poppins xxs:text-[16px] text-[#38896b]'>Add a controller here</h1>
         </div>
         <div className="slate w-[85%] h-auto bg-[#89deba] rounded-2xl xxs:py-8 xxs:flex xxs:flex-col xxs:items-center">

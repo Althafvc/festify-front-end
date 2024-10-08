@@ -3,10 +3,13 @@ import React from 'react'
 function AdminHome() {
   return (
     <>
+    <div className="wrapper w-full h-full xxs:pb-14 md:pb-0  bg-[#a5f5bd] flex xxs:flex-col md:flex-row xxs:items-center xxs:gap-10 lg:gap-20 xl:gap-22 xxs:pt-10 md:pt-0">
 
-      <div className="slate w-auto xxs:px-10 lg:px-20 xxs:pt-8 xxs:pb-10 h-auto pb-10 bg-[#89deba] rounded-2xl xxs:flex xxs:flex-col xxs:gap-7 xs:gap-5 lg:py-0">
+    
+
+      <div className="slate w-auto xxs:px-10 lg:px-20 xxs:pt-8 xxs:pb-10 h-auto pb-10 bg-[#89deba] rounded-2xl xxs:flex xxs:flex-col xxs:gap-7 xs:gap-5 lg:py-0 2xl:pb-10 2xl:pl-20 2xl:pr-36 md:mt-">
         <div className="heading xxs:w-full h-auto xxs:flex xxs:justify-center xxs:items-center">
-          <h1 className='font-aclonica text-[#06744C] xxs:text-xl sm:text-2xl md:text-3xl md:mt-5 lg:text-4xl xl:text-5xl 2xl:text-6xl xl:mt-6 '>PROGRAM NAME</h1>
+          <h1 className='font-aclonica text-[#06744C] xxs:text-xl sm:text-2xl md:text-3xl md:mt-5  xl:text-5xl 2xl:text-6xl xl:mt-6 2xl:mt-8'>PROGRAM NAME</h1>
         </div>
 
         <section className='xxs:w-full xxs:ml-5 lg:ml-10 xxs:flex xxs:flex-col xxs:gap-2 xs:gap-3 lg:mt-5'>
@@ -80,6 +83,7 @@ function AdminHome() {
         </section>
 
 
+      </div>
       </div>
 
     </>

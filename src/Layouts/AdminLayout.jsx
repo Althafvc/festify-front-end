@@ -8,9 +8,10 @@ function AdminLayout() {
 
     <>
     <Navbar/>
-
+    <div className="flex xxs:flex-col md:flex-row md:items-center xxs:h- auto bg-[#a5f5bd]  border-2 border-black">
 <Adminsidebar/>
     <Outlet/>
+    </div>
      <Admnfooter/>
     </>
 

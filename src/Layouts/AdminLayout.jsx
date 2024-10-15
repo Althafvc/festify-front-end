@@ -7,7 +7,7 @@ function AdminLayout() {
 
     <>
     <Navbar/>
-    <div className="flex xxs:flex-col md:flex-row xxs:h-aut0 bg-[#a5f5bd]">
+    <div className="flex xxs:flex-col md:flex-row  bg-[#a5f5bd]">
     <Outlet/>
     </div>
      <Admnfooter/>

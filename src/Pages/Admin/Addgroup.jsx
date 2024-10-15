@@ -8,7 +8,7 @@ function Addgroup() {
   return (
     <>
     <Adminsidebar/>
-     <div className="xxs:w-full xxs:h-full xxs:flex xxs:flex-col xxs:gap-5 xxs:justify-center xxs:items-center xxs:py-5">
+     <div className="wrapper xxs:w-full xxs:h-full xxs:flex xxs:flex-col xxs:gap-5 xxs:justify-center xxs:items-center xxs:py-5">
 
 <div className="head-area ">
   <h1 className='font-poppins xxs:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-[#38896b]'>Add your groups here</h1>

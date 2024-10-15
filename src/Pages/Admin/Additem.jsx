@@ -1,14 +1,21 @@
 import React from 'react'
 import Defaultbutton from '../../Components/Shared/Defaultbutton'
+import Adminsidebar from '../../Components/Admin/Adminsidebar'
 
 function Additem() {
 
   return (
     <>
-      {/* <div className="wrapper w-[100vw] h-auto bg-[#a5f5bd] xxs: flex xxs:flex-col pt-6 items-center gap-6 py-10"> */}
 
-<div className="head-area ">
-  <h1 className='font-poppins xxs:text-[16px] text-[#38896b]'>Add your items for the program here</h1>
+    <div className="">
+    <Adminsidebar height="h-full" />
+    </div>
+          
+
+      <div className="wrapper xxs:w-full xxs:h-full xxs:flex xxs:flex-col xxs:gap-5 xxs:justify-center xxs:items-center xxs:py-5">
+
+<div className="head-area xxs:text-center">
+  <h1 className='font-poppins xxs:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-[#38896b]'>Add your items for the program here</h1>
 </div>
 <div className="slate w-[85%] h-auto bg-[#89deba] rounded-2xl xxs:py-8 xxs:flex xxs:flex-col xxs:items-center">
 
@@ -69,7 +76,7 @@ function Additem() {
 
 
 </div>
-{/* </div> */}
+</div>
     </>
   )
 }

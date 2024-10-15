@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../Components/Admin/Navbar'
-import Adminsidebar from '../Components/Admin/Adminsidebar'
 import Admnfooter from '../Components/Admin/Admnfooter'
 import { Outlet } from 'react-router-dom'
 function AdminLayout() {
@@ -8,7 +7,7 @@ function AdminLayout() {
 
     <>
     <Navbar/>
-    <div className="flex xxs:flex-col md:flex-row xxs:h-aut0  lg:h-screen bg-[#a5f5bd]">
+    <div className="flex xxs:flex-col md:flex-row xxs:h-aut0 bg-[#a5f5bd]">
     <Outlet/>
     </div>
      <Admnfooter/>

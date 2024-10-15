@@ -1,13 +1,16 @@
 import React from 'react'
 import Defaultbutton from '../../Components/Shared/Defaultbutton'
+import Adminsidebar from '../../Components/Admin/Adminsidebar'
 
 function Addcontroller() {
   return (
     <>
-    <div className="">
+        <Adminsidebar/>
 
-        <div className="head-area">
-          <h1 className='font-poppins xxs:text-[16px] text-[#38896b]'>Add a controller here</h1>
+    <div className=' xxs:w-full xxs:h-full xxs:flex xxs:flex-col xxs:gap-5 xxs:justify-center xxs:items-center xxs:py-5  border border-red-700'>
+
+        <div className="head-area ">
+          <h1 className='font-poppins xxs:text-xl font-semibold text-[#38896b]'>Add a controller here</h1>
         </div>
         <div className="slate w-[85%] h-auto bg-[#89deba] rounded-2xl xxs:py-8 xxs:flex xxs:flex-col xxs:items-center">
 

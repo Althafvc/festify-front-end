@@ -1,11 +1,12 @@
 import React from 'react'
-
+import Adminsidebar from '../../Components/Admin/Adminsidebar'
 function AdminHome() {
   return (
     <>
-    <div className="wrapper md:w-full md:h-full lg:pt-10   bg-[#a5f5bd] flex md:flex-row xxs:justify-center  xl:gap-22 xxs:py-10 md:pt-0 border-2 border-yellow-600 ">
+    <Adminsidebar/>
+    <div className="wrapper md:w-full md:h-screen lg:pt-5  bg-[#a5f5bd] flex md:flex-row xxs:justify-center  xl:gap-22 xxs:py-10 md:pt-0">
 
-      <div className="slate w-auto xxs:px-10 lg:px-20  xxs:pt-8 xxs:pb-10 h-auto pb-10 bg-[#89deba] rounded-2xl xxs:flex xxs:flex-col xxs:gap-7 xs:gap-5 2xl:pb-10 2xl:pl-20 2xl:pr-36 lg:mt-0 ">
+      <div className="slate md:mt-3 w-auto xxs:px-10 lg:px-20  xxs:pt-8 xxs:pb-10 h-auto pb-10 bg-[#89deba] rounded-2xl xxs:flex xxs:flex-col xxs:gap-7 xs:gap-5 2xl:pb-10 2xl:pl-20 2xl:pr-36">
         <div className="heading xxs:w-full h-auto xxs:flex xxs:justify-center xxs:items-center">
           <h1 className='font-aclonica text-[#06744C] xxs:text-xl sm:text-2xl md:text-3xl  xl:text-5xl 2xl:text-6xl xl:mt-6 2xl:mt-8'>PROGRAM NAME</h1>
         </div>
@@ -35,13 +36,12 @@ function AdminHome() {
 
 
         <section className='xxs:ml-5 lg:ml-10'>
-          <h3 className='xxs:font-semibold font-aclonica xxs:text-sm  sm:text-base xxs:mb-4 xl:text-xl xs:mt-6 sm:mt-8 2xl:text-2xl'>Talents now</h3>
+          <h3 className='xxs:font-semibold font-aclonica xxs:text-sm  sm:text-base xxs:mb-4 xl:text-xl xs:mt-6 sm:mt-8 2xl:text-2xl lg:mt-2'>Talents now</h3>
+
           <div className="data-wrap">
 
-
-
             <div className="subsec font-bold font-aclonica xxs:w-full xxs:text-xs sm:text-sm xxs:ml-5 lg:text-base
-             xxs:mb-5 2xl:text-xl">sub junior
+             xxs:mb-5 2xl:text-xl lg:mb-3">sub junior
 
               <table className='xxs:w-[90%] xxs:mt-'>
                 <tr>
@@ -52,7 +52,7 @@ function AdminHome() {
             </div>
 
 
-            <div className="subsec font-bold font-aclonica xxs:w-full xxs:text-xs sm:text-sm xxs:ml-5 lg:text-base xxs:mb-5 2xl:text-xl">Junior
+            <div className="subsec font-bold font-aclonica xxs:w-full xxs:text-xs sm:text-sm xxs:ml-5 lg:text-base xxs:mb-5 2xl:text-xl lg:mb-3">Junior
 
               <table className='xxs:w-[90%] xxs:mt-'>
                 <tr>

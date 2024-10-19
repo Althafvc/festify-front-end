@@ -21,7 +21,6 @@ const OTP = () => {
   const searchParams = new URLSearchParams(location.search);
   const email = searchParams.get('email');
   const role = searchParams.get('role')
-  console.log(email,role);
   
 
   // Handle OTP input changes

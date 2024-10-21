@@ -17,6 +17,8 @@ function Addprogram() {
 
   // Function to handle form submission
   async function onsubmit(data) {
+    console.log(data);
+    
     // Transform form data into the required format before sending it to the server
     const transformedData = {      
       numberofClasses: data.numberofClasses,

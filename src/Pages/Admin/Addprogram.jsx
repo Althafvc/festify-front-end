@@ -79,6 +79,10 @@ function Addprogram() {
                 minLength: {
                   value: 3,
                   message: 'Program name must be at least 3 characters long' // Validation: min length
+                },
+                pattern: {
+                  value: /^[A-Za-z\s]+$/, // Validation: only alphabets and spaces
+                  message: 'Only alphabetic characters are allowed'
                 }
               })} />
               {/* Display error message if validation fails */}
@@ -94,6 +98,10 @@ function Addprogram() {
                 minLength: {
                   value: 3,
                   message: 'Program type must be at least 3 characters long'
+                },
+                pattern: {
+                  value: /^[A-Za-z\s]+$/, // Validation: only alphabets and spaces
+                  message: 'Only alphabetic characters are allowed'
                 }
               })}
               />

@@ -77,7 +77,7 @@ const OTP = () => {
   return (
     <>
       {/* Background image */}
-      <img src={bg} className="h-screen w-full" alt="Login background" />
+      <div className="h-screen w-full bg-[#a5f6bd]">
       <div className="w-[20rem] h-[18rem] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-custom-dark bg-opacity-65 flex items-center flex-col backdrop-blur-sm">
         <div className="w-full text-[37px] font-bold text-white flex justify-center mb-8 mt-8">Verify OTP</div>
         
@@ -106,6 +106,7 @@ const OTP = () => {
 
         {/* Display alert message if any */}
         {alert && <span className='mt-[138px] md:mt-[180px]'><BasicAlerts type={alert.type} msg={alert.msg} /></span>}
+      </div>
       </div>
     </>
   );

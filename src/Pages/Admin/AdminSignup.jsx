@@ -125,12 +125,17 @@ function AdminSignup() {
                 placeholder="Password" 
                 className="w-[260px] rounded-md pl-3 2xl:pl-5 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none xl:w-[320px] 2xl:w-[360px] 2xl:h-[50px] 2xl:text-xl" 
                 {...register('password', {
-                  required:'This field is required',
-                  pattern: {
-                    value: /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/,
-                    message: 'Invalid password format'
+                  required: 'This field is required',
+                  validate: value => {
+                    if (/[^0-9]/.test(value)) {
+                      return 'Password must only contain digits'; // Message if alphabet or non-digit character is entered
+                    } else if (!/^\d{8}$/.test(value)) {
+                      return 'Password must contain 8 digits'; // Message if it doesn't contain exactly 8 digits
+                    }
                   }
                 })}
+                
+                
               />
               {/* Error message for password */}
               {errors.password && <span className='text-red-600'>{errors.password.message}</span>}

@@ -53,7 +53,6 @@ function Additem() {
     </div>
 
 
-
 <div className="inp-outline xxs:w-full xxs:h-auto xxs:flex xxs:flex-col xxs:gap-1">
       <label className='xxs:font-semibold font-inter'>Item type :</label>
       <input type="text" name="" placeholder='Item type' className='w-[30%] h-[30px]  rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none' />
@@ -64,6 +63,8 @@ function Additem() {
       <label className='xxs:font-semibold font-inter'>Maximum number of participants :</label>
       <input type="text" name="" placeholder='Maximum number of participants' className='w-[30%] h-[30px]  rounded-md pl-3 py-2 border-b-2 border-gray-300 focus:border-b-sky-800 focus:outline-none' />
     </div>
+
+    
 
 <div className="inp-outline xxs:w-full xxs:h-auto xxs:flex xxs:flex-col xxs:gap-1">
       <label className='xxs:font-semibold font-inter'> Gender:</label>
